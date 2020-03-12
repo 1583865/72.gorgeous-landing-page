@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<link rel="stylesheet" type="text/css" href="./demo.css">
+</head>
+<body>
+	<form action="" class="login-form">
+		<h1>LOGIN</h1>
+		<div class="txtb">
+			<input type="text" name="" value="">
+			<span data-placeholder="Username"></span>
+		</div>
+
+		<div class="txtb">
+			<input type="password" name="" value="">
+			<span data-placeholder="password"></span>
+		</div>
+
+		<input type="submit" class="logbtn" value="Login">
+		<div class="bottom-text">
+			Don't have account?<a href="#">Sign up</a>
+		</div>
+	</form>
+
+
+	<script type="text/javascript" src="./jquery.js"></script>
+	<script type="text/javascript">
+
+	$(".txtb input").on("focus",function(){
+		$(this).addClass("focus");
+	})
+
+
+	$(".txtb input").on("blur",function(){
+		if($(this).val()=="")
+		$(this).removeClass("focus");
+	})
+	</script>
+</body>
+</html>
